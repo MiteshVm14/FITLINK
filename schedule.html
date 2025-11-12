@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weekly Schedule | FITLINK</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"/>
+<style>
+  body {
+    background: linear-gradient(to bottom, #000000, #0B6623);
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding-top: 80px; /* Prevent navbar overlap */
+  }
+
+  .navbar {
+    background-color: #1a5d38;
+  }
+  .navbar .nav-link {
+    color: #fff;
+  }
+  .navbar .nav-link:hover,
+  .navbar .nav-link.active {
+    color: #c8f7dc;
+  }
+
+  main {
+    flex: 1;
+  }
+
+  /* Modern timetable cards */
+  .class-card {
+    background: rgba(255,255,255,0.1);
+    border-left: 4px solid #4B0082;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .class-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+  }
+  .class-card h5 {
+    margin: 0;
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+  .class-card .details {
+    font-size: 0.95rem;
+    margin-top: 5px;
+  }
+  .class-card i {
+    color: #c8f7dc;
+    margin-right: 5px;
+  }
+
+  footer {
+    background-color: #1a5d38;
+    color: #fff;
+    padding: 20px 0;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  #scrollTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: #c8f7dc;
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    font-size: 24px;
+    color: #14532d;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  #scrollTopBtn:hover { background-color: #fff; }
+</style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">FITLINK STUD</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="trainers.html">Trainers</a></li>
+        <li class="nav-item"><a class="nav-link active" href="schedule.html">Timetable</a></li>
+        <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main class="container my-5">
+  <h2 class="text-center mb-4">Weekly Schedule</h2>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="class-card">
+        <h5><i class="fas fa-calendar-day"></i> Monday</h5>
+        <div class="details"><i class="far fa-clock"></i> 8:00 AM</div>
+        <div class="details"><i class="fas fa-dumbbell"></i> Yoga</div>
+        <div class="details"><i class="fas fa-user"></i> Shalini</div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="class-card">
+        <h5><i class="fas fa-calendar-day"></i> Tuesday</h5>
+        <div class="details"><i class="far fa-clock"></i> 5:00 PM</div>
+        <div class="details"><i class="fas fa-dumbbell"></i> Zumba</div>
+        <div class="details"><i class="fas fa-user"></i> Emma</div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="class-card">
+        <h5><i class="fas fa-calendar-day"></i> Wednesday</h5>
+        <div class="details"><i class="far fa-clock"></i> 9:00 AM</div>
+        <div class="details"><i class="fas fa-dumbbell"></i> Pilates</div>
+        <div class="details"><i class="fas fa-user"></i> Zendaya</div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="class-card">
+        <h5><i class="fas fa-calendar-day"></i> Thursday</h5>
+        <div class="details"><i class="far fa-clock"></i> 6:00 PM</div>
+        <div class="details"><i class="fas fa-dumbbell"></i> Gym Training</div>
+        <div class="details"><i class="fas fa-user"></i> Hrithik</div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="class-card">
+        <h5><i class="fas fa-calendar-day"></i> Friday</h5>
+        <div class="details"><i class="far fa-clock"></i> 10:00 AM</div>
+        <div class="details"><i class="fas fa-dumbbell"></i> Yoga</div>
+        <div class="details"><i class="fas fa-user"></i> Shalini</div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <p class="mb-1">© 2025 FITLINK STUD | Balik Pulau, Penang</p>
+    <p class="mb-0">Email: <a href="mailto:fitlinkstudinfo@gmail.com" class="text-light text-decoration-underline">fitlinkstudinfo@gmail.com</a> | Contact: 011-1234 7982</p>
+  </div>
+</footer>
+
+<button id="scrollTopBtn">↑</button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<script>
+const scrollBtn = document.getElementById('scrollTopBtn');
+window.addEventListener('scroll', () => {
+  scrollBtn.style.display = document.documentElement.scrollTop > 200 ? 'block' : 'none';
+});
+scrollBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+</script>
+</body>
+</html>
